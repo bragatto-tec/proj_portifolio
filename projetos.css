@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+header img {
+    max-height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #a855f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.grid {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.images {
+    flex: 1;
+    min-width: 0;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 8px;
+}
+
+.desc {
+    flex: 1;
+    min-width: 0;
+}
+
+.desc h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.neon {
+    border: 0;
+    height: 3px;
+    width: 80px;
+    background-color: #a855f7;
+    box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7;
+    margin: 25px 0;
+}
+
+.desc p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.desc p:last-of-type {
+    margin-top: 20px;
+}
