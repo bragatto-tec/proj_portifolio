@@ -5,7 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 body {
-    background-color: #000;
+    background-color: #121212;
     color: #fff;
     font-size: 16px;
     overflow: hidden;
@@ -15,7 +15,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #121212;
     padding: 15px 5%;
     display: flex;
     justify-content: space-between;
@@ -135,4 +135,106 @@ section .list .item {
 section .list .item.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media (max-width: 900px) {
+  body {
+    overflow: auto; /* rolagem */
+  }
+
+  section .list .item {
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+    gap: 30px;
+    padding: 0 40px;
+  }
+
+  section .list .item .content {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section .list .item .bia-img {
+    max-width: 350px; 
+  }
+
+  section .list .item .content h2 {
+    font-size: 3em; 
+  }
+
+  header img {
+    width: 180px;
+  }
+  header nav ul {
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  section .list {
+    width: 90vw; 
+  }
+
+  section .list .item .bia-img {
+    max-width: 300px; 
+  }
+  
+  section .list .item .content h2 {
+    font-size: 2.5em; 
+  }
+
+  section .list .item .content .description {
+    font-size: 0.95rem;
+  }
+
+  header {
+    padding: 15px 4%;
+  }
+  header img {
+    width: 160px;
+  }
+  header nav ul {
+    gap: 25px;
+  }
+  header nav ul li a {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  section .list .item {
+    padding: 0 20px; /*lateral */
+  }
+
+  section .list .item .bia-img {
+    max-width: 250px;
+  }
+
+  section .list .item .content h2 {
+    font-size: 2.2em; 
+  }
+
+  section .list .item .content .description {
+    font-size: 0.9rem;
+  }
+
+  
+  header {
+    padding: 12px 15px;
+  }
+  header img {
+    width: 140px; 
+  }
+  header nav ul {
+    gap: 20px;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
 }
