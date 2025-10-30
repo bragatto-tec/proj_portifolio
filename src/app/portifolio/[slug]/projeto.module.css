@@ -1,0 +1,117 @@
+.container {
+    max-width: 1200px;
+    margin: 200px auto 100px;
+    padding: 0 40px;
+}
+
+.grid {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.images {
+    flex: 1;
+    min-width: 0;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 8px;
+}
+
+.desc {
+    flex: 1;
+    min-width: 0;
+}
+
+.desc h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.neon {
+    border: 0;
+    height: 3px;
+    width: 80px;
+    background-color: #a855f7;
+    box-shadow: 0 0 10px #a855f7, 0 0 20px #a855f7;
+    margin: 25px 0;
+}
+
+.desc p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.desc p:last-of-type {
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    .neon {
+        margin: 25px auto;
+    }
+
+    .desc h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 180px auto 80px;
+        padding: 0 30px;
+    }
+
+    .grid {
+        gap: 30px;
+    }
+
+    .desc h1 {
+        font-size: 2.2rem;
+    }
+
+    .desc p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 160px auto 60px;
+        padding: 0 20px;
+    }
+
+    .images {
+        padding: 20px;
+    }
+
+    .desc h1 {
+        font-size: 2rem;
+    }
+
+    .desc p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,129 @@
+.content {
+    padding: 7rem 5% 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 7rem);
+}
+
+.pageTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: #111111;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    border-color: rgba(170, 0, 255, 0.4);
+    box-shadow: 0 0 15px 3px var(--purple-glow);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 1.5rem;
+}
+
+.card-info h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: #cccccc;
+    min-height: 40px;
+}
+
+.card-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card:hover .card-link {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        padding-top: 6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 5rem 5% 3rem;
+    }
+
+    .card {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 4rem 15px 2rem;
+    }
+
+    .grid {
+        gap: 1.5rem;
+    }
+
+    .card-info {
+        padding: 1.2rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-info p {
+        font-size: 0.9rem;
+        min-height: 35px;
+    }
+
+}

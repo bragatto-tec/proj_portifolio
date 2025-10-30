@@ -1,0 +1,145 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 80vw;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.list::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+
+.bia-img {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e9cfff;
+    box-shadow: 0 0 15px #c88cff, 0 0 30px #c88cff, 0 0 45px #9a42ff;
+    position: relative;
+}
+
+.bia-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    text-align: left;
+}
+
+.ano {
+    font-weight: 500;
+    font-size: 1.1em;
+    opacity: 0.7;
+}
+
+.content h2 {
+    font-size: 3.5em;
+    line-height: 1.1em;
+    font-family: var(--font-league-gothic);
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #d9d9d9;
+    font-size: 1em;
+    line-height: 1.6em;
+    max-width: 500px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 900px) {
+    .item {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bia-img {
+        max-width: 350px;
+    }
+
+    .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        width: 90vw;
+    }
+
+    .bia-img {
+        max-width: 300px;
+    }
+
+    .content h2 {
+        font-size: 2.5em;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .item {
+        padding: 0 20px;
+    }
+
+    .bia-img {
+        max-width: 250px;
+    }
+
+    .content h2 {
+        font-size: 2.2em;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
