@@ -33,7 +33,9 @@ header {
 }
 
 header img {
-  width: 200px;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 header nav ul {
@@ -59,7 +61,8 @@ header nav ul li a:hover {
   }
 
   header img {
-    width: 180px;
+    height: 50px;
+    width: auto;
   }
 
   header nav ul {
@@ -73,7 +76,8 @@ header nav ul li a:hover {
   }
 
   header img {
-    width: 160px;
+    height: 45px;
+    width: auto;
   }
 
   header nav ul {
@@ -91,7 +95,8 @@ header nav ul li a:hover {
   }
 
   header img {
-    width: 140px;
+    height: 40px;
+    width: auto;
   }
 
   header nav ul {
