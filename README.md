@@ -6,8 +6,7 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Contentful](https://img.shields.io/badge/Contentful-29303a?style=for-the-badge&logo=contentful&logoColor=red)
 ![Resend](https://img.shields.io/badge/Resend-black?style=for-the-badge&logo=send&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge)
-
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 </div>
 
 ---
@@ -47,6 +46,10 @@ O projeto segue a arquitetura do **App Router** do Next.js:
 - **Serviço de E-mail**: [Resend](https://resend.com/)
 - **Estilização**: CSS Modules & CSS Variables
 - **Fontes**: Google Fonts (Poppins, League Gothic, Oswald)
+
+## Link para acesso no Vercel
+- https://proj222-gpj-guilherme-bragattos-projects.vercel.app/
+
 
 ## 👨‍💻 Desenvolvedores
 
