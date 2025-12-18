@@ -1,4 +1,4 @@
-# 🦋 Projeto Borboleta - Portfólio Next.js
+# Portfólio Next.js
 
 <div align="center">
 
@@ -7,8 +7,6 @@
 ![Contentful](https://img.shields.io/badge/Contentful-29303a?style=for-the-badge&logo=contentful&logoColor=red)
 ![Resend](https://img.shields.io/badge/Resend-black?style=for-the-badge&logo=send&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge)
-
-**Bem-vindo ao repositório do Projeto Borboleta!**
 
 </div>
 
