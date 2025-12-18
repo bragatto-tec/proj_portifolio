@@ -50,7 +50,7 @@ O projeto segue a arquitetura do **App Router** do Next.js:
 
 ## 👨‍💻 Desenvolvedores
 
-- **Guilherme Miyamoto Bragatto** (RA: 10736124) - [GitHub](https://github.com/bragatto-tec)
+- **Guilherme Miyamoto Bragatto** - [GitHub](https://github.com/bragatto-tec)
 
 ---
 
